@@ -177,6 +177,19 @@ def get_token_address(token):
         
     return token_address
 
+def get_token_address(token, blockchain):
+    if token == "USDC":
+          token_address=os.getenv(blockchain+"_USDC_ADDRESS")
+    elif token == "USDT":
+          token_address=os.getenv(blockchain+"_USDT_ADDRESS")
+    elif token == "ETH":
+          token_address=os.getenv(blockchain+"_ETH_ADDRESS")
+    else:
+          token_address=0
+        
+    return token_address
+
+
 def load_token_contract(token, web3):
     """
     Carica il contratto specificato in base al token fornito.
@@ -291,6 +304,7 @@ def get_node_connection(blockchain):
     """
    
     geth_url = get_infura_url(blockchain)
+    print(f'URL è: {geth_url} ')
     web3 = Web3(Web3.HTTPProvider(geth_url))
 
     # Verifica della connessione
@@ -334,9 +348,6 @@ def get_balance(wallet_address, web3):
     balance_eth = web3.from_wei(balance_wei, 'ether')
     return balance_eth
 
-
-
-
 def main():
     """
     Funzione principale per verificare saldo ETH e USDT.
@@ -366,7 +377,8 @@ def main():
     hash_tx =AAVE_withdraw_ETH(0.001, my_eth_address,web3)
 
 # Caricamento delle variabili d'ambiente dal file .env
-load_dotenv()
 
-
-main()
+if __name__ == "__main__":
+  load_dotenv()
+  main()
+ 
