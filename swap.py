@@ -1,13 +1,9 @@
-import json
+
 from erc20_opt import *
-import datetime
-import decimal
 import os
-import sys
-from decimal import Decimal
-from web3 import Account, Web3
-from abi import UNISWAP_V3_ROUTER2_ABI, WETH9_ABI, MIN_ERC20_ABI
-import eth_abi.packed
+from abi import UNISWAP_V4_ROUTER_ABI, WETH9_ABI
+from uniswap_universal_router import  Uniswap # or whatever you name this script
+
 
 #########################################################################################
 # method to swap token vs eth
@@ -16,8 +12,13 @@ import eth_abi.packed
 #
 # Doc
 # https://docs.uniswap.org/contracts/v3/reference/periphery/interfaces/ISwapRouter
+# https://github.com/snarflakes/uniswap-python-swapper
 ##########################################################################################
 
+def get_swap_router(blockChain=None):
+    url = blockChain + "_UNI_SWAP4_ADDRESS"
+    get_url = os.getenv(url)
+    return get_url
 
 def  approve_wrap(amount, from_address, web3):
     weth_address =os.getenv('OPT_UNI_WRAP_ADDRESS') 
@@ -76,45 +77,44 @@ def swap_token(amount,my_eth_address, init_token, final_token ,blockchain,web3):
     init_token_address=get_token_address(init_token,blockchain)
     final_token_address =get_token_address(final_token,blockchain)
     
-    if init_token == "ETH":
-       wrap_eth(amount_wei,my_eth_address,blockchain,web3)
-       approve_wrap(amount_wei, my_eth_address,blockchain, web3)
+    #if init_token == "ETH":
+    #   wrap_eth(amount_wei,my_eth_address,blockchain,web3)
+    #   approve_wrap(amount_wei, my_eth_address,blockchain, web3)
     
-  
-    swap_router =get_swap_router(blockchain)
+    #A seconda del tipo di pool puo esserci un router diverso. Quindi la coppia di cui devo
+    #fare lo swap determina il tipo del mio pool. Nel caso cbtc -- usdc e' la v4. quindi devo usare
+    #quella in test. Non posso sapere a priori la versione del router
+    #per essere sicuri devi guardare in metamask che scelga proprio la tua versione
+    #swap_router =get_swap_router(blockchain)
     
-    router = web3.eth.contract(address=swap_router02_address, abi=UNISWAP_V3_ROUTER2_ABI)
-    
-    
-    nonce = web3.eth.get_transaction_count(my_eth_address)
-    
-    # Swap transactions
+    #router = web3.eth.contract(address=swap_router, abi=UNISWAP_V4_ROUTER_ABI)
+    #nonce = web3.eth.get_transaction_count(my_eth_address)
+    private_key=os.getenv("PRIVATE_KEY")  # Recupero della chiave privata
+    provider_url=get_infura_url(blockchain)
 
-    transaction = router.functions.exactOutputSingle(
-    [
-        init_token_address,
-        final_token_address,
-        fee,
-        my_eth_address,
-        out_amount,
-        in_amount_max,
-        0,  # sqrtPriceLimitX96: a value of 0 makes this parameter inactive
-    ]
-    ).build_transaction(
-    {
-        "chainId": web3.eth.chain_id,
-        "gas": int(1e7),
-        "gasPrice": web3.eth.gas_price,
-        "nonce": nonce
-    }
+    uniswap = Uniswap(
+    wallet_address=my_eth_address,
+    private_key=private_key,
+    provider=provider_url,  # Used to auto-detect chain
+    web3=web3
     )
 
-
-      # Invio della transazione
-    tx_hash = send_transaction(transaction, web3)
-    print(f'sell_eth_for_Token {tx_hash}')
-    
-    return tx_hash   
+   # 4. Perform a swap (SWAP_EXACT_IN)
+   # Example: Swap 1 tokenIn -> tokenOut at 0.3% fee in a v3 pool
+    tx_hash =0
+    try:
+      tx_hash = uniswap.make_trade(
+        from_token=init_token_address,
+        to_token=final_token_address,
+        amount=amount_wei,
+        fee=3000,  # e.g., 3000 for a 0.3% Uniswap V3 pool
+        slippage=0.5,  # non-functional right now. 0.5% slippage tolerance
+        pool_version="v3"  # can be "v3" or "v4"
+      )
+      print(f"Swap transaction sent! Tx hash: {tx_hash.hex()}")
+    except Exception as e:
+      print(f"Swap failed: {e}")
+    return tx_hash
 
         
  
@@ -123,9 +123,9 @@ def swap_token(amount,my_eth_address, init_token, final_token ,blockchain,web3):
 
 
 def main1():
-    web3 = get_node_connection("BASE")
+    web3 = get_node_connection("ETH")
     my_eth_address = os.getenv("MY_ADDRESS")
-    swap_token(0.01,my_eth_address, "USDC","ETH","BASE", web3)
+    swap_token(1,my_eth_address, "USDC","USDT","ETH", web3)
  
     
 
@@ -136,5 +136,6 @@ load_dotenv()
 
 
 main1()
+
 
 

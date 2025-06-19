@@ -176,6 +176,8 @@ def get_token_address(token):
           token_address=0
         
     return token_address
+#Per vedere lista dei contratti
+#https://developers.circle.com/stablecoins/usdc-contract-addresses
 
 def get_token_address(token, blockchain):
     if token == "USDC":
