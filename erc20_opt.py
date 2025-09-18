@@ -4,7 +4,9 @@ import time
 from web3 import Web3
 import os
 from dotenv import load_dotenv
-from datetime import datetime
+from old.abi import ERC20_ABI
+
+
 #########################################################################################
 # Obiettivo di questo script è fornire delle funzioni di base per interagire con smart contract ERC20
 #
@@ -99,7 +101,10 @@ def  get_wei_amount(token,amount,web3):
     else:
           amount_wei=web3.to_wei(amount, 'ether')  
     return amount_wei
-        
+
+def get_token_decimals(token_address,web3):
+    contract = web3.eth.contract(address=token_address, abi=ERC20_ABI)
+    return contract.functions.decimals().call()
 
 def approve(token, spender, wallet_address, max_amount, web3):
    token_contract= load_token_contract(token, web3)
@@ -167,32 +172,46 @@ def  AAVE_deposit_Token(amount, from_address,token, web3):
 
     return tx_hash
 
-def get_token_address(token):
-    if token == "USDC":
-          token_address=os.getenv("OPT_USDC_ADDRESS")
-    elif token == "USDT":
-          token_address=os.getenv("OPT_USDT_ADDRESS")
-    else:
-          token_address=0
-        
-    return token_address
-#Per vedere lista dei contratti
+
+#to see all usdc contrat
 #https://developers.circle.com/stablecoins/usdc-contract-addresses
 
 def get_token_address(token, blockchain):
-    if token == "USDC":
-          token_address=os.getenv(blockchain+"_USDC_ADDRESS")
-    elif token == "USDT":
-          token_address=os.getenv(blockchain+"_USDT_ADDRESS")
-    elif token == "ETH":
-          token_address=os.getenv(blockchain+"_ETH_ADDRESS")
-    else:
-          token_address=0
-        
+    """
+       Get token address in a certain  blockchain
+
+
+       Args:
+         token= coin_id according  to https://api.coingecko.com/
+         blockchain: according  to https://api.coingecko.com/
+
+       Returns:
+       adddress of token
+        """
+
+    token_label=blockchain.upper()+"_"+token.upper()+"_ADDRESS"
+    token_address=os.getenv(token_label)
+
+    if not token_address:
+      token_address=  get_token_coingecko(token, blockchain)
+
     return token_address
 
 
-def load_token_contract(token, web3):
+def get_token_coingecko(token, blockchain):
+    response = requests.get("https://api.coingecko.com/api/v3/coins/list?include_platform=true")
+    response.raise_for_status()
+    coins = response.json()
+    for coin in coins:
+        if coin["id"] == token:
+            platforms = coin.get("platforms", {})
+            address = platforms.get(blockchain)
+            return address
+
+    raise ValueError(f"❌ Unsupported token: {token}")
+
+
+def load_token_contract(token,blockchain, web3):
     """
     Carica il contratto specificato in base al token fornito.
 
@@ -203,10 +222,10 @@ def load_token_contract(token, web3):
     Returns:
         contract (Contract): Contratto interagibile tramite Web3.
     """
-    abi_file = os.getenv("ERC20_ABI_FILE")
-    contract_address =get_token_address(token)
+
+    contract_address =get_token_address(token,blockchain)
     # Caricamento del contratto
-    contract = load_contract(contract_address, abi_file, web3)
+    contract = web3.eth.contract(address=contract_address, abi=ERC20_ABI)
     return contract
 
 def load_contract(contract_address, abi_file, web3):
@@ -292,31 +311,31 @@ def transferToken(amount, from_address, to_address, token, web3):
 
 
 def get_infura_url(blockchain):
-    url=blockchain+"_INFURA_URL"
+    url=blockchain.upper() +"_INFURA_URL"
     get_url = os.getenv(url)
     return get_url
     
     
 def get_node_connection(blockchain):
     """
-    Crea una connessione al nodo Ethereum.
+    Crea un
 
     Returns:
-        Web3: Istanza connessa alla blockchain.
+        Web3: web3 istance connected.
     """
    
     geth_url = get_infura_url(blockchain)
     print(f'URL è: {geth_url} ')
     web3 = Web3(Web3.HTTPProvider(geth_url))
 
-    # Verifica della connessione
+    # check connection
     if not web3.is_connected():
         raise Exception("Unable to connect to the Ethereum node")
 
     return web3
 
 
-def get_token_balance(wallet_address, token, web3):
+def get_token_balance(wallet_address, token, blockchain, web3):
     """
     Ottiene il saldo di un token ERC-20.
 
@@ -328,11 +347,32 @@ def get_token_balance(wallet_address, token, web3):
     Returns:
         float: Saldo del token in formato leggibile.
     """
-    
-    contract = load_token_contract(token, web3)
+    #
+
+    token_address = get_token_address(token, blockchain)
+    contract = load_token_contract(token,blockchain, web3)
     balance = contract.functions.balanceOf(wallet_address).call()
-    formatted_balance = balance / 10**6  # USDT ha 6 decimali
+    decimals=get_token_decimals(token_address,web3)
+    formatted_balance = balance / 10**decimals
     return formatted_balance
+
+
+def get_crypto_price_usd(crypto_id):
+    """
+    Restituisce il valore in USD della criptovaluta specificata per ID.
+
+    :param crypto_id: ID della criptovaluta su CoinGecko (es. 'bitcoin', 'ethereum')
+    :return: Prezzo in USD come float, oppure None in caso di errore
+    """
+    url = f"https://api.coingecko.com/api/v3/simple/price"
+    params = {
+        'ids': crypto_id,
+        'vs_currencies': 'usd'
+    }
+    response = requests.get(url, params=params)
+    response.raise_for_status()  # genera eccezione se risposta non 2xx
+    data = response.json()
+    return data[crypto_id]['usd']
 
 
 def get_balance(wallet_address, web3):
@@ -361,10 +401,15 @@ def main():
     balance_eth = get_balance(my_eth_address, web3)
     print(f'Il saldo del wallet è: {balance_eth} ETH')
 
+    get_token_address2("tether", "ethereum")
+    current_price=get_crypto_price_usd("coinbase-wrapped-btc")
+    print(f'Il current price di  coinbase-wrapped-btc è: {current_price} USD')
+
     # Ottenere e stampare il saldo USDT
-    balance_usdt = get_token_balance(my_eth_address, "USDT", web3)
+    balance_usdt = get_token_balance(my_eth_address,"tether", "OPT", web3)
     print(f'Il saldo del wallet è: {balance_usdt} USDT')
-     
+
+
 # Esempio di trasferimento e ritiro di 10 token su aave
     hash_tx =  AAVE_deposit_Token(10, my_eth_address, "USDC", web3)
     print(f'AAVE_deposit_Token {hash_tx}')

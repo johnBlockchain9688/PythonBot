@@ -1,9 +1,9 @@
 
 from erc20_opt import *
 import os
-from abi import UNISWAP_V4_ROUTER_ABI, WETH9_ABI
-from uniswap_universal_router import  Uniswap # or whatever you name this script
-
+from abi import WETH9_ABI
+from old.Uniswap import  Uniswap # or whatever you name this script
+from CryptoUtil.Token import Token
 
 #########################################################################################
 # method to swap token vs eth
@@ -72,8 +72,8 @@ def wrap_eth(amount,from_address,web3):
     return tx_hash
 
 def swap_token(amount,my_eth_address, init_token, final_token ,blockchain,web3):
-    
-    amount_wei=get_wei_amount(init_token,amount,web3)
+    start_token= Token (blockchain,init_token)
+    amount_wei=start_token.get_wei_amount(amount)
     init_token_address=get_token_address(init_token,blockchain)
     final_token_address =get_token_address(final_token,blockchain)
     
@@ -102,8 +102,8 @@ def swap_token(amount,my_eth_address, init_token, final_token ,blockchain,web3):
    # 4. Perform a swap (SWAP_EXACT_IN)
    # Example: Swap 1 tokenIn -> tokenOut at 0.3% fee in a v3 pool
     tx_hash =0
-    try:
-      tx_hash = uniswap.make_trade(
+
+    tx_hash = uniswap.make_trade(
         from_token=init_token_address,
         to_token=final_token_address,
         amount=amount_wei,
@@ -111,15 +111,16 @@ def swap_token(amount,my_eth_address, init_token, final_token ,blockchain,web3):
         slippage=0.5,  # non-functional right now. 0.5% slippage tolerance
         pool_version="v3"  # can be "v3" or "v4"
       )
-      print(f"Swap transaction sent! Tx hash: {tx_hash.hex()}")
-    except Exception as e:
-      print(f"Swap failed: {e}")
     return tx_hash
 
         
  
   
 
+
+if __name__ == "__main__":
+    load_dotenv()
+    main1()
 
 
 def main1():
@@ -132,10 +133,7 @@ def main1():
 
 
 # Caricamento delle variabili d'ambiente dal file .env
-load_dotenv()
 
-
-main1()
 
 
 

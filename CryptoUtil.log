@@ -1,0 +1,683 @@
+2025-06-29 16:53:57,253 INFO:Started
+2025-06-29 17:23:42,866 INFO:Started
+2025-06-29 17:24:36,332 INFO:Token balance is 0.0
+2025-06-29 17:24:47,220 INFO:Stable balance is 93.961125
+2025-06-29 17:27:28,506 INFO:Started
+2025-06-29 17:27:42,589 INFO:Token balance is 0.0
+2025-06-29 17:27:59,134 INFO:Stable balance is 93.961125
+2025-06-29 17:34:09,089 INFO:Started
+2025-06-29 17:34:19,533 INFO:Token balance is 0.0
+2025-06-29 17:34:22,059 INFO:Stable balance is 93.961125
+2025-06-29 17:34:51,995 INFO:token price is 107913
+2025-06-29 17:34:56,315 INFO:token price threshold is 115000
+2025-06-29 17:36:48,029 INFO:Started
+2025-06-29 17:36:57,969 INFO:Token balance is 0.0
+2025-06-29 17:37:00,535 INFO:Stable balance is 93.961125
+2025-06-29 17:37:23,726 INFO:token price is 107984
+2025-06-29 17:37:24,553 INFO:token price threshold is 115000
+2025-06-29 17:38:00,896 INFO:Started
+2025-06-29 17:38:11,349 INFO:Token balance is 0.0
+2025-06-29 17:38:14,909 INFO:Stable balance is 93.961125
+2025-06-29 17:38:25,280 INFO:token price is 107974
+2025-06-29 17:38:26,151 INFO:token price threshold is 115000
+2025-06-29 17:44:46,602 INFO:Started
+2025-06-29 17:44:55,909 INFO:Token balance is 0.0
+2025-06-29 17:44:58,492 INFO:Stable balance is 93.961125
+2025-06-29 17:45:04,109 INFO:token price is 108011
+2025-06-29 17:45:04,822 INFO:token price threshold is 115000
+2025-06-29 18:03:19,045 INFO:Started
+2025-06-29 18:03:23,714 INFO:Token balance is 0.0
+2025-06-29 18:03:24,945 INFO:Stable balance is 93.961125
+2025-06-29 18:03:26,271 INFO:token price is 107834
+2025-06-29 18:03:26,271 INFO:token price threshold is 115000
+2025-06-29 18:07:57,442 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 75, in main
+    logger.info("swap BUY executed  transaction id=" + txt_id.hex())
+                                                       ^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'hex'
+2025-06-29 18:12:59,991 INFO:Started
+2025-06-29 18:13:07,982 INFO:Token balance is 0.0
+2025-06-29 18:13:09,135 INFO:Stable balance is 93.961125
+2025-06-29 18:13:09,645 INFO:token price is 107659
+2025-06-29 18:13:09,646 INFO:token price threshold is 115000
+2025-06-29 18:20:24,370 INFO:Started
+2025-06-29 18:20:27,223 INFO:Token balance is 0.0
+2025-06-29 18:20:28,326 INFO:Stable balance is 93.961125
+2025-06-29 18:20:31,605 INFO:token price is 107730
+2025-06-29 18:20:31,605 INFO:token price threshold is 115000
+2025-06-29 18:27:30,304 INFO:Started
+2025-06-29 18:27:33,288 INFO:Token balance is 0.0
+2025-06-29 18:27:34,260 INFO:Stable balance is 93.961125
+2025-06-29 18:27:35,541 INFO:token price is 107586
+2025-06-29 18:27:35,541 INFO:token price threshold is 115000
+2025-06-29 18:34:00,488 INFO:Started
+2025-06-29 18:34:03,497 INFO:Token balance is 0.0
+2025-06-29 18:34:04,559 INFO:Stable balance is 93.961125
+2025-06-29 18:34:04,865 INFO:token price is 107571
+2025-06-29 18:34:04,865 INFO:token price threshold is 115000
+2025-06-29 18:39:23,746 INFO:Started
+2025-06-29 18:39:26,351 INFO:Token balance is 0.0
+2025-06-29 18:39:27,424 INFO:Stable balance is 93.961125
+2025-06-29 18:39:28,963 INFO:token price is 107573
+2025-06-29 18:39:28,963 INFO:token price threshold is 115000
+2025-06-29 18:39:36,027 INFO:swap BUY executed  transaction id={txt_id} 
+2025-06-29 18:52:29,119 INFO:Started
+2025-06-29 18:52:32,040 INFO:Token balance is 0.0
+2025-06-29 18:52:33,252 INFO:Stable balance is 93.961125
+2025-06-29 18:52:33,556 INFO:token price is 107367
+2025-06-29 18:52:33,557 INFO:token price threshold is 115000
+2025-06-29 19:02:06,139 INFO:Started
+2025-06-29 19:02:09,358 INFO:Token balance is 0.0
+2025-06-29 19:02:10,381 INFO:Stable balance is 93.961125
+2025-06-29 19:02:10,685 INFO:token price is 107530
+2025-06-29 19:02:10,685 INFO:token price threshold is 115000
+2025-06-29 19:12:40,272 INFO:Started
+2025-06-29 19:12:43,109 INFO:Token balance is 0.0
+2025-06-29 19:12:44,238 INFO:Stable balance is 93.961125
+2025-06-29 19:12:44,543 INFO:token price is 107492
+2025-06-29 19:12:44,543 INFO:token price threshold is 115000
+2025-06-29 19:18:48,156 INFO:Started
+2025-06-29 19:18:51,239 INFO:Token balance is 0.0
+2025-06-29 19:18:52,270 INFO:Stable balance is 93.961125
+2025-06-29 19:18:52,569 INFO:token price is 107513
+2025-06-29 19:18:52,570 INFO:token price threshold is 115000
+2025-06-29 19:20:37,532 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 74, in main
+    txt_id = swap_token(stable_due, wallet_address,stable_token_name, token_name, blockchain,web3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/swap.py", line 106, in swap_token
+    tx_hash = uniswap.make_trade(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/uniswap_universal_router.py", line 290, in make_trade
+    .build_transaction(self.account.address, amount_in_wei if is_native_input else 0, ur_address=self.router_address, nonce=nonce, chain_id=8453, max_fee_per_gas=gas_params['max_fee_per_gas'],trx_speed=0,priority_fee=gas_params['max_priority_fee_per_gas'])
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/uniswap_universal_router_decoder/_encoder.py", line 1005, in build_transaction
+    estimated_gas = self._w3.eth.estimate_gas(tx_params, block_identifier)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/web3/eth/eth.py", line 317, in estimate_gas
+    return self._estimate_gas(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/web3/method.py", line 168, in __get__
+    if module.w3.provider._is_batching:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/web3/providers/base.py", line 100, in _is_batching
+    return self._batching_context.get() is not None
+           ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AutoProvider' object has no attribute '_batching_context'
+2025-06-29 19:23:16,358 INFO:Started
+2025-06-29 19:23:19,427 INFO:Token balance is 0.0
+2025-06-29 19:23:20,855 INFO:Stable balance is 93.961125
+2025-06-29 19:23:21,082 INFO:token price is 107582
+2025-06-29 19:23:21,082 INFO:token price threshold is 115000
+2025-06-29 19:24:34,211 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 74, in main
+    txt_id = swap_token(stable_due, wallet_address,stable_token_name, token_name, blockchain,web3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/swap.py", line 106, in swap_token
+    tx_hash = uniswap.make_trade(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/uniswap_universal_router.py", line 316, in make_trade
+    signed_tx = self.w3.eth.account.sign_transaction(tx, self.account.key)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/decorators.py", line 29, in _wrapper
+    return self.method(obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/account.py", line 863, in sign_transaction
+    ) = sign_transaction_dict(account._key_obj, sanitized_transaction, blobs=blobs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/signing.py", line 50, in sign_transaction_dict
+    unsigned_transaction = serializable_unsigned_transaction_from_dict(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/legacy_transactions.py", line 77, in serializable_unsigned_transaction_from_dict
+    return TypedTransaction.from_dict(transaction_dict, blobs=blobs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/typed_transaction.py", line 106, in from_dict
+    transaction=transaction.from_dict(dictionary, blobs=blobs),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 150, in from_dict
+    cls.assert_valid_fields(dictionary)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 136, in assert_valid_fields
+    raise TypeError(f"Transaction had invalid fields: {repr(invalid)}")
+TypeError: Transaction had invalid fields: {'data': {'from': '0xC8CF8695eDcd148c8CB662A2931CBa4bE6E8Bbbf', 'value': 0, 'to': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'chainId': 8453, 'nonce': 2, 'type': '0x2', 'maxPriorityFeePerGas': 1000000, 'maxFeePerGas': 3000000, 'data': '0x24856bc30000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000340000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003060f0c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000024000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb20000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000000003c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000009795290000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb20000000000000000000000000000000000000000000000000000000000979529', 'gas': 500000}}
+2025-06-29 21:58:48,977 INFO:Started
+2025-06-29 21:58:51,941 INFO:Token balance is 0.0
+2025-06-29 21:58:52,996 INFO:Stable balance is 93.961125
+2025-06-29 21:58:53,295 INFO:token price is 107429
+2025-06-29 21:58:53,295 INFO:token price threshold is 115000
+2025-06-29 22:01:24,344 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 74, in main
+    txt_id = swap_token(stable_due, wallet_address,stable_token_name, token_name, blockchain,web3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/swap.py", line 106, in swap_token
+    tx_hash = uniswap.make_trade(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/uniswap_universal_router.py", line 316, in make_trade
+    signed_tx = self.w3.eth.account.sign_transaction(tx, self.account.key)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/decorators.py", line 29, in _wrapper
+    return self.method(obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/account.py", line 863, in sign_transaction
+    ) = sign_transaction_dict(account._key_obj, sanitized_transaction, blobs=blobs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/signing.py", line 50, in sign_transaction_dict
+    unsigned_transaction = serializable_unsigned_transaction_from_dict(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/legacy_transactions.py", line 77, in serializable_unsigned_transaction_from_dict
+    return TypedTransaction.from_dict(transaction_dict, blobs=blobs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/typed_transaction.py", line 106, in from_dict
+    transaction=transaction.from_dict(dictionary, blobs=blobs),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 150, in from_dict
+    cls.assert_valid_fields(dictionary)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 136, in assert_valid_fields
+    raise TypeError(f"Transaction had invalid fields: {repr(invalid)}")
+TypeError: Transaction had invalid fields: {'data': {'from': '0xC8CF8695eDcd148c8CB662A2931CBa4bE6E8Bbbf', 'value': 0, 'to': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'chainId': 8453, 'nonce': 2, 'type': '0x2', 'maxPriorityFeePerGas': 1000000, 'maxFeePerGas': 3000000, 'data': '0x24856bc30000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000340000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003060f0c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000024000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb20000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000000003c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000975df90000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb20000000000000000000000000000000000000000000000000000000000975df9', 'gas': 500000}}
+2025-06-29 22:17:09,247 INFO:Started
+2025-06-29 22:17:12,081 INFO:Token balance is 0.0
+2025-06-29 22:17:13,106 INFO:Stable balance is 93.961125
+2025-06-29 22:17:13,383 INFO:token price is 107409
+2025-06-29 22:17:13,383 INFO:token price threshold is 115000
+2025-06-29 22:17:32,776 INFO:Input amount in wei: 9918147
+2025-06-29 22:17:33,554 INFO:Input amount in token: 9.918147
+2025-06-29 22:17:34,191 INFO:Token decimals: 6
+2025-06-29 22:17:36,200 INFO:Token balance in wei: 93961125
+2025-06-29 22:17:37,111 INFO:Token balance in token: 93.961125
+2025-06-29 22:17:40,925 INFO:Sufficient Permit2 allowance already exists
+2025-06-29 22:17:44,281 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753820262, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751228442}
+2025-06-29 22:17:45,076 INFO:signed_message: SignedMessage(message_hash=HexBytes('0xa9ccf145c4c6878b7e37124db1a4fc6d489c0a6f183163737b16b31e99a83d10'), r=59358889230591936053543724430662374854939154437951494351237048040611818014995, s=26426005844422626671958083412816180982221461930620683281591180467620055942509, v=27, signature=HexBytes('0x833bf0d2522330e6ec347c318f1c04577f39d34132d0b1f8a519a3ae8d2889133a6c96da298f36ae558b3102a63bd192ede03c05741111e5303bac95db61056d1b'))
+2025-06-29 22:17:45,790 INFO:amount_in_wei: 9918147
+2025-06-29 22:18:41,835 INFO:Input amount in wei: 9918147
+2025-06-29 22:18:42,727 INFO:Input amount in token: 9.918147
+2025-06-29 22:18:43,494 INFO:Token decimals: 6
+2025-06-29 22:19:38,216 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 74, in main
+    txt_id = swap_token(stable_due, wallet_address,stable_token_name, token_name, blockchain,web3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/swap.py", line 106, in swap_token
+    tx_hash = uniswap.make_trade(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/uniswap_universal_router.py", line 319, in make_trade
+    signed_tx = self.w3.eth.account.sign_transaction(tx, self.account.key)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/decorators.py", line 29, in _wrapper
+    return self.method(obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/account.py", line 863, in sign_transaction
+    ) = sign_transaction_dict(account._key_obj, sanitized_transaction, blobs=blobs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/signing.py", line 50, in sign_transaction_dict
+    unsigned_transaction = serializable_unsigned_transaction_from_dict(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/legacy_transactions.py", line 77, in serializable_unsigned_transaction_from_dict
+    return TypedTransaction.from_dict(transaction_dict, blobs=blobs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/typed_transaction.py", line 106, in from_dict
+    transaction=transaction.from_dict(dictionary, blobs=blobs),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 150, in from_dict
+    cls.assert_valid_fields(dictionary)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 136, in assert_valid_fields
+    raise TypeError(f"Transaction had invalid fields: {repr(invalid)}")
+TypeError: Transaction had invalid fields: {'data': {'from': '0xC8CF8695eDcd148c8CB662A2931CBa4bE6E8Bbbf', 'value': 0, 'to': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'chainId': 8453, 'nonce': 2, 'type': '0x2', 'maxPriorityFeePerGas': 1000000, 'maxFeePerGas': 3000000, 'data': '0x24856bc30000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000340000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003060f0c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000024000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb20000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000000003c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000009756c30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb200000000000000000000000000000000000000000000000000000000009756c3', 'gas': 500000}}
+2025-06-29 22:39:59,060 INFO:Started
+2025-06-29 22:40:02,190 INFO:Token balance is 0.0
+2025-06-29 22:40:03,323 INFO:Stable balance is 93.961125
+2025-06-29 22:40:03,536 INFO:token price is 107503
+2025-06-29 22:40:03,536 INFO:token price threshold is 115000
+2025-06-29 22:40:24,405 INFO:Input amount in wei: 9926827
+2025-06-29 22:40:25,014 INFO:Input amount in token: 9.926827
+2025-06-29 22:40:25,182 INFO:Token decimals: 6
+2025-06-29 22:40:27,091 INFO:Token balance in wei: 93961125
+2025-06-29 22:40:27,802 INFO:Token balance in token: 93.961125
+2025-06-29 22:40:31,460 INFO:Sufficient Permit2 allowance already exists
+2025-06-29 22:40:34,731 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753821632, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751229812}
+2025-06-29 22:40:35,236 INFO:signed_message: SignedMessage(message_hash=HexBytes('0xe64e77cb5b0ccda0af149da59093c280098ee39baf0c45cce8a2fb13a7eb702a'), r=81532759120852512502841331994175943917287034492755080597465667516725381965198, s=35938865882740831934349372893228648626022247675538775897412444052339032276506, v=27, signature=HexBytes('0xb441e80422c5296507dc1a44afc973a352f4dd450cfb44b8865d948991ca258e4f74ad5fcf5752686717952ccd56b461568f895ce231a6cbc85d5dc114433e1a1b'))
+2025-06-29 22:40:35,546 INFO:amount_in_wei: 9926827
+2025-06-29 22:40:37,958 INFO:Input amount in wei: 9926827
+2025-06-29 22:40:38,715 INFO:Input amount in token: 9.926827
+2025-06-29 22:40:39,088 INFO:Token decimals: 6
+2025-06-29 22:46:00,875 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 74, in main
+    txt_id = swap_token(stable_due, wallet_address,stable_token_name, token_name, blockchain,web3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/swap.py", line 106, in swap_token
+    tx_hash = uniswap.make_trade(
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/uniswap_universal_router.py", line 320, in make_trade
+    signed_tx = self.w3.eth.account.sign_transaction(tx, self.account.key)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/decorators.py", line 29, in _wrapper
+    return self.method(obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/account.py", line 863, in sign_transaction
+    ) = sign_transaction_dict(account._key_obj, sanitized_transaction, blobs=blobs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/signing.py", line 50, in sign_transaction_dict
+    unsigned_transaction = serializable_unsigned_transaction_from_dict(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/_utils/legacy_transactions.py", line 77, in serializable_unsigned_transaction_from_dict
+    return TypedTransaction.from_dict(transaction_dict, blobs=blobs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/typed_transaction.py", line 106, in from_dict
+    transaction=transaction.from_dict(dictionary, blobs=blobs),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 150, in from_dict
+    cls.assert_valid_fields(dictionary)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_account/typed_transactions/dynamic_fee_transaction.py", line 136, in assert_valid_fields
+    raise TypeError(f"Transaction had invalid fields: {repr(invalid)}")
+TypeError: Transaction had invalid fields: {'data': {'from': '0xC8CF8695eDcd148c8CB662A2931CBa4bE6E8Bbbf', 'value': 0, 'to': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'chainId': 8453, 'nonce': 2, 'type': '0x2', 'maxPriorityFeePerGas': 1000000, 'maxFeePerGas': 3000000, 'data': '0x24856bc30000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000340000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000003060f0c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001e0000000000000000000000000000000000000000000000000000000000000024000000000000000000000000000000000000000000000000000000000000001600000000000000000000000000000000000000000000000000000000000000020000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb20000000000000000000000000000000000000000000000000000000000000bb8000000000000000000000000000000000000000000000000000000000000003c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000009778ab0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000cbb7c0000ab88b473b1f5afd9ef808440eed33bf00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000fde4c96c8593536e31f229ea8f37b2ada2699bb200000000000000000000000000000000000000000000000000000000009778ab', 'gas': 500000}}
+2025-06-29 22:58:14,622 INFO:Started
+2025-06-29 22:58:17,786 INFO:Token balance is 0.0
+2025-06-29 22:58:18,905 INFO:Stable balance is 93.961125
+2025-06-29 22:58:19,206 INFO:token price is 107417
+2025-06-29 22:58:19,207 INFO:token price threshold is 115000
+2025-06-29 22:58:31,699 INFO:Input amount in wei: 9918885
+2025-06-29 22:58:31,699 INFO:Input amount in token: 9.918885
+2025-06-29 22:58:31,699 INFO:Token decimals: 6
+2025-06-29 22:58:32,214 INFO:Token balance in wei: 93961125
+2025-06-29 22:58:32,214 INFO:Token balance in token: 93.961125
+2025-06-29 22:58:32,623 INFO:Sufficient Permit2 allowance already exists
+2025-06-29 22:58:33,236 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753822713, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751230893}
+2025-06-29 22:58:33,236 INFO:signed_message: SignedMessage(message_hash=HexBytes('0xfe8887026b0fc4338e82cc36b28415a58f8e262862d138fb2dfb65fd38b93535'), r=87698460781709906362097643059841305793226214733578023699954851060640724493037, s=36151895295031687170645855075508284748454060286834238160502518728411869683558, v=27, signature=HexBytes('0xc1e391dd5f95d32ba62907995bd7bbb6c65f8e1c4702389f40a1cf7bf53b22ed4fed3f63df969ba118f5c7fd04ce1517e2dad1b70e3d91b073237676647d1f661b'))
+2025-06-29 22:58:33,236 INFO:amount_in_wei: 9918885
+2025-06-29 22:58:33,858 INFO:Input amount in wei: 9918885
+2025-06-29 22:58:33,858 INFO:Input amount in token: 9.918885
+2025-06-29 22:58:33,858 INFO:Token decimals: 6
+2025-06-29 23:08:42,775 INFO:Started
+2025-06-29 23:08:45,987 INFO:Token balance is 0.0
+2025-06-29 23:08:47,163 INFO:Stable balance is 93.961125
+2025-06-29 23:08:48,541 INFO:token price is 107085
+2025-06-29 23:08:48,542 INFO:token price threshold is 115000
+2025-06-29 23:09:58,177 INFO:Input amount in wei: 9888228
+2025-06-29 23:09:58,177 INFO:Input amount in token: 9.888228
+2025-06-29 23:09:58,177 INFO:Token decimals: 6
+2025-06-29 23:09:58,583 INFO:Token balance in wei: 93961125
+2025-06-29 23:09:58,583 INFO:Token balance in token: 93.961125
+2025-06-29 23:09:59,041 INFO:Sufficient Permit2 allowance already exists
+2025-06-29 23:09:59,714 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753823399, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751231579}
+2025-06-29 23:09:59,714 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x8794fcca2110fc6e84769e7308bc8bdc746ac048f1b49f35bfddcb98702d53a0'), r=95796453166542922202910218587378540743675296603612723066271556437469622573387, s=44601200030632652492251656714784682464675976591249962930222137675228936368353, v=27, signature=HexBytes('0xd3cadefcfe6a0322e5510cee7ef674f283a78547372707ebc870b5dcdfae194b629b6276d10e6dcc040b44c648ddfd0ffb784ce3604e3a601a9694d07f1770e11b'))
+2025-06-29 23:09:59,714 INFO:amount_in_wei: 9888228
+2025-06-29 23:10:00,223 INFO:Input amount in wei: 9888228
+2025-06-29 23:10:00,224 INFO:Input amount in token: 9.888228
+2025-06-29 23:10:00,224 INFO:Token decimals: 6
+2025-06-29 23:12:07,624 INFO:Started
+2025-06-29 23:12:10,596 INFO:Token balance is 0.0
+2025-06-29 23:12:11,703 INFO:Stable balance is 93.961125
+2025-06-29 23:12:13,031 INFO:token price is 107515
+2025-06-29 23:12:13,031 INFO:token price threshold is 115000
+2025-06-29 23:12:30,858 INFO:Input amount in wei: 9927935
+2025-06-29 23:12:30,858 INFO:Input amount in token: 9.927935
+2025-06-29 23:12:30,859 INFO:Token decimals: 6
+2025-06-29 23:12:31,470 INFO:Token balance in wei: 93961125
+2025-06-29 23:12:31,470 INFO:Token balance in token: 93.961125
+2025-06-29 23:12:32,078 INFO:Sufficient Permit2 allowance already exists
+2025-06-29 23:12:32,747 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753823552, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751231732}
+2025-06-29 23:12:32,747 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x89ee3f574bc1caf526115bd157807a09193bf2a1ee4b0eae8be907ddd88ddbd9'), r=25199822394789617806522606429651856848397713886943184707571299655115627256858, s=44299007136685239004284249795565303321385452826559422039671863739330298859015, v=28, signature=HexBytes('0x37b698123ad6f97d2068c424722297a769b51596d0f1e9efb86d197372035c1a61f05979684a9f359eb525884a527bd8bfc726ccc5e04d4a112dda21607b4e071c'))
+2025-06-29 23:12:32,747 INFO:amount_in_wei: 9927935
+2025-06-29 23:12:33,222 INFO:Input amount in wei: 9927935
+2025-06-29 23:12:33,222 INFO:Input amount in token: 9.927935
+2025-06-29 23:12:33,222 INFO:Token decimals: 6
+2025-06-29 23:13:46,882 INFO:swap BUY executed  transaction id={txt_id} 
+2025-06-29 23:21:34,560 INFO:Started
+2025-06-29 23:21:38,411 INFO:Token balance is 0.0
+2025-06-29 23:21:39,633 INFO:Stable balance is 93.961125
+2025-06-29 23:21:40,654 INFO:token price is 107476
+2025-06-29 23:21:40,655 INFO:token price threshold is 115000
+2025-06-29 23:21:54,684 INFO:Input amount in wei: 9924333
+2025-06-29 23:21:54,684 INFO:Input amount in token: 9.924333
+2025-06-29 23:21:54,684 INFO:Token decimals: 6
+2025-06-29 23:21:55,299 INFO:Token balance in wei: 93961125
+2025-06-29 23:21:55,299 INFO:Token balance in token: 93.961125
+2025-06-29 23:21:56,016 INFO:Sufficient Permit2 allowance already exists
+2025-06-29 23:21:56,850 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753824116, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751232296}
+2025-06-29 23:21:56,850 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x45286825f43eef43361d3af65a9f77c60fed9d07519f6af620cb026ee89be09b'), r=114007096554077191072821850602946820118603066771430623438719598355709265011541, s=6585723828712653679745816787154776733269368946145922702103781125121472515085, v=27, signature=HexBytes('0xfc0dbadd9a9e543e6012ad8d9d3eb8fd32e351699d3daf03841d73d232ad63550e8f63395267d5a7c11effb1988bcc6dbc18dfe5fc2dccb362bd10af647ccc0d1b'))
+2025-06-29 23:21:56,850 INFO:amount_in_wei: 9924333
+2025-06-29 23:21:57,452 INFO:Input amount in wei: 9924333
+2025-06-29 23:21:57,452 INFO:Input amount in token: 9.924333
+2025-06-29 23:21:57,452 INFO:Token decimals: 6
+2025-06-29 23:25:10,978 INFO:swap BUY executed  transaction id=b'\xae\x0e\x9a\x97\x89K\xb5\xe7\xe3\xfd?\xbc\xd9\x9f\xdf-\x05\x82@\xb8WT\x8e0\x82\xecoP\xdcj\x90\r' 
+2025-06-30 07:40:16,589 INFO:Started
+2025-06-30 07:40:20,403 INFO:Token balance is 0.0
+2025-06-30 07:40:21,577 INFO:Stable balance is 93.961125
+2025-06-30 07:40:22,038 INFO:token price is 108219
+2025-06-30 07:40:22,038 INFO:token price threshold is 115000
+2025-06-30 07:40:46,817 INFO:No stuck transactions to cancel
+2025-06-30 07:41:03,358 INFO:Input amount in wei: 9992942
+2025-06-30 07:41:04,231 INFO:Input amount in token: 9.992942
+2025-06-30 07:41:05,224 INFO:Token decimals: 6
+2025-06-30 07:41:07,605 INFO:Token balance in wei: 93961125
+2025-06-30 07:41:11,609 INFO:Token balance in token: 93.961125
+2025-06-30 07:41:17,545 INFO:Sufficient Permit2 allowance already exists
+2025-06-30 07:41:22,691 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753854080, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751262260}
+2025-06-30 07:41:23,469 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x79a02951740e154c7eccde9f2665ad099219663d8b3ad9000e92a75b929fd998'), r=11081098536648492035435149547255683090393179012819237973881988814588453770713, s=13668414865868842140786973900289499118682851420360639085852793679371711122975, v=28, signature=HexBytes('0x187fadf47c2f7ea484198e0ac79c0cd0a9b592c08957559751f641548fc6d5d91e380c74e802074360dabf7527adfc77ce312c3e72ec5c8ed79df4c51b558e1f1c'))
+2025-06-30 07:41:24,224 INFO:amount_in_wei: 9992942
+2025-06-30 07:41:32,928 INFO:Input amount in wei: 9992942
+2025-06-30 07:41:35,309 INFO:Input amount in token: 9.992942
+2025-06-30 07:41:36,113 INFO:Token decimals: 6
+2025-06-30 07:43:05,864 INFO:swap BUY executed  transaction id=b'\nR\xf8\x0b\x8e\xf0\xa6\r\xbf\xbf\xc2t\xaf\xa1\xac\r\x92\xbc6\x0b\x11H\xe3\xa3)IB\x84\x84\xc7\xe5\xee' 
+2025-06-30 07:52:47,259 INFO:Started
+2025-06-30 07:52:50,681 INFO:Token balance is 0.0
+2025-06-30 07:52:51,642 INFO:Stable balance is 93.961125
+2025-06-30 07:52:52,111 INFO:token price is 108302
+2025-06-30 07:52:52,111 INFO:token price threshold is 115000
+2025-06-30 07:53:04,602 INFO:No stuck transactions to cancel
+2025-06-30 07:53:16,147 INFO:Input amount in wei: 10000606
+2025-06-30 07:53:16,663 INFO:Input amount in token: 10.000606
+2025-06-30 07:53:17,141 INFO:Token decimals: 6
+2025-06-30 07:53:19,140 INFO:Token balance in wei: 93961125
+2025-06-30 07:53:19,927 INFO:Token balance in token: 93.961125
+2025-06-30 07:53:24,177 INFO:Sufficient Permit2 allowance already exists
+2025-06-30 07:53:27,447 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1753854805, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751262985}
+2025-06-30 07:53:28,194 INFO:signed_message: SignedMessage(message_hash=HexBytes('0xda486b74ec3f6a8b7675bf4688e8d72cb71058c539dbd7164ec4113d03631380'), r=51842849955139782426163660015180521395598014290497542203247449729203785154901, s=54287402527072383304842504918866363859896024155160043793753826976603486566449, v=28, signature=HexBytes('0x729e03633a4a471a2a241d69f23246a11c8d41973befd2b2001cb3b3cd17c155780594b99525c3635021e9e27a88115616ba0640d517d97cf14b5e74a62438311c'))
+2025-06-30 07:53:28,909 INFO:amount_in_wei: 10000606
+2025-06-30 07:53:33,091 INFO:Input amount in wei: 10000606
+2025-06-30 07:53:33,798 INFO:Input amount in token: 10.000606
+2025-06-30 07:53:34,483 INFO:Token decimals: 6
+2025-07-02 07:18:03,986 INFO:Started
+2025-07-02 07:18:07,360 INFO:Token balance is 0.0
+2025-07-02 07:18:08,586 INFO:Stable balance is 93.961125
+2025-07-02 07:18:09,917 INFO:token price is 106725
+2025-07-02 07:18:09,917 INFO:token price threshold is 115000
+2025-07-02 07:18:30,401 INFO:Started
+2025-07-02 07:18:33,582 INFO:Token balance is 0.0
+2025-07-02 07:18:34,809 INFO:Stable balance is 93.961125
+2025-07-02 07:18:34,896 INFO:token price is 106725
+2025-07-02 07:18:34,897 INFO:token price threshold is 115000
+2025-07-03 22:16:09,724 INFO:Started
+2025-07-03 22:16:12,605 INFO:Token balance is 0.0
+2025-07-03 22:16:13,701 INFO:Stable balance is 93.961125
+2025-07-03 22:16:15,031 INFO:token price is 109936
+2025-07-03 22:16:15,032 INFO:token price threshold is 115000
+2025-07-03 22:21:04,511 ERROR:Errore durante esecuzione
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 74, in main
+    txt_id = swap_token(stable_due, wallet_address,stable_token_name, token_name, blockchain,web3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/swap.py", line 95, in swap_token
+    uniswap = Uniswap(
+              ^^^^^^^^
+TypeError: Uniswap.__init__() got an unexpected keyword argument 'provider'
+2025-07-03 22:21:37,490 INFO:Started
+2025-07-03 22:21:40,360 INFO:Token balance is 0.0
+2025-07-03 22:21:41,489 INFO:Stable balance is 93.961125
+2025-07-03 22:21:41,916 INFO:token price is 109925
+2025-07-03 22:21:41,916 INFO:token price threshold is 115000
+2025-07-03 22:21:58,166 INFO:Started
+2025-07-03 22:22:01,246 INFO:Token balance is 0.0
+2025-07-03 22:22:02,154 INFO:Stable balance is 93.961125
+2025-07-03 22:22:02,215 INFO:token price is 109925
+2025-07-03 22:22:02,215 INFO:token price threshold is 115000
+2025-07-03 22:29:48,823 INFO:Started
+2025-07-03 22:29:51,885 INFO:Token balance is 0.0
+2025-07-03 22:29:53,000 INFO:Stable balance is 93.961125
+2025-07-03 22:29:54,253 INFO:token price is 109931
+2025-07-03 22:29:54,253 INFO:token price threshold is 115000
+2025-07-03 22:30:29,942 INFO:No stuck transactions to cancel
+2025-07-03 22:33:35,815 INFO:Started
+2025-07-03 22:33:38,648 INFO:Token balance is 0.0
+2025-07-03 22:33:39,713 INFO:Stable balance is 93.961125
+2025-07-03 22:33:39,915 INFO:token price is 109907
+2025-07-03 22:33:39,915 INFO:token price threshold is 115000
+2025-07-03 22:33:48,830 INFO:No stuck transactions to cancel
+2025-07-03 22:55:04,182 INFO:Started
+2025-07-03 22:55:07,198 INFO:Token balance is 0.0
+2025-07-03 22:55:08,324 INFO:Stable balance is 93.961125
+2025-07-03 22:55:08,623 INFO:token price is 109999
+2025-07-03 22:55:08,623 INFO:token price threshold is 115000
+2025-07-03 22:55:15,626 INFO:No stuck transactions to cancel
+2025-07-03 22:57:19,210 INFO:Input amount in wei: 10.15730766
+2025-07-03 22:57:20,380 INFO:Token decimals: 6
+2025-07-03 22:57:40,695 INFO:Token balance in wei: 93961125
+2025-07-03 22:57:43,269 INFO:Token balance in token: 93.961125
+2025-07-03 22:59:14,057 INFO:Sufficient Permit2 allowance already exists
+2025-07-03 22:59:18,445 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1754168355, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751576535}
+2025-07-03 23:00:01,673 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x122f0470082e7d0c63b193d06d8d9a63eadc9b06a1eea1568b96a732f32193e9'), r=60576986418436275061192353157308795964038421241261150732580981928544419644626, s=48198528941573338484962869740458032384287469144386359552404333263837933250842, v=28, signature=HexBytes('0x85ed5bfa223b9e5d9006a664493f90e7622e2d9bce25c3020420b84bf30304d26a8f66900aac88ee242d0d1478c99b54920e8e14794f51644b6730f6ae4ea91a1c'))
+2025-07-03 23:00:02,724 INFO:amount_in_wei: 10.15730766
+2025-07-03 23:00:31,772 ERROR:Errore:
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 76, in main
+    uni.make_trade( stable_token_name,token_name,stable_due,3000,0.5,"v3")
+  File "/home/mbaraldi/mySoftware/mycryptobot/CryptoUtil/Uniswap.py", line 226, in make_trade
+    to_token = Web3.to_checksum_address(to_token)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/web3/main.py", line 268, in to_checksum_address
+    return to_checksum_address(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/address.py", line 129, in to_checksum_address
+    norm_address = to_normalized_address(value)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/address.py", line 73, in to_normalized_address
+    hex_address = hexstr_if_str(to_hex, value).lower()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_utils/conversions.py", line 195, in hexstr_if_str
+    raise ValueError(
+ValueError: when sending a str, it must be a hex string. Got: 'coinbase-wrapped-btc'
+
+2025-07-03 23:39:04,123 INFO:Started
+2025-07-03 23:39:07,085 INFO:Token balance is 0.0
+2025-07-03 23:39:08,196 INFO:Stable balance is 93.961125
+2025-07-03 23:39:09,483 INFO:token price is 109802
+2025-07-03 23:39:09,483 INFO:token price threshold is 115000
+2025-07-03 23:39:17,517 INFO:No stuck transactions to cancel
+2025-07-03 23:39:32,378 INFO:Input amount in wei: 10.13911668
+2025-07-03 23:39:33,100 INFO:Token decimals: 6
+2025-07-03 23:39:49,472 INFO:Token balance in wei: 93961125
+2025-07-03 23:39:50,683 INFO:Token balance in token: 93.961125
+2025-07-03 23:39:58,780 INFO:Sufficient Permit2 allowance already exists
+2025-07-03 23:40:03,393 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1754170800, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751578980}
+2025-07-03 23:40:04,192 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x7e82ec888425511be1c0bae9155281da82ae121cd9ecb0368b24964efae71f9c'), r=53984223941990753693145908599519328101233892387250613309738914448402372019301, s=11770856589945401216504273393787135410915719696802055925725588938956733199086, v=28, signature=HexBytes('0x7759fceadb70f8e10280f1902bd9514d6a188f27d169c264e89d6e3c3736c4651a0611989f732130c2141376241ecbd853a0c277cb2ca4a331001a9b3bccb2ee1c'))
+2025-07-03 23:40:05,281 INFO:amount_in_wei: 10.13911668
+2025-07-03 23:40:34,330 ERROR:Errore:
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 76, in main
+    uni.make_trade( stable_token_name,token_name,stable_due,3000,0.5,"v3")
+  File "/home/mbaraldi/mySoftware/mycryptobot/CryptoUtil/Uniswap.py", line 239, in make_trade
+    min_amount_out =( amount_in_wei - amount_in_wei * slippage) / end_token.get_token_price()
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Token' object has no attribute 'get_token_price'
+
+2025-07-04 07:56:47,661 INFO:Started
+2025-07-04 07:56:50,788 INFO:Token balance is 0.0
+2025-07-04 07:56:52,009 INFO:Stable balance is 93.961125
+2025-07-04 07:56:53,239 INFO:token price is 109085
+2025-07-04 07:56:53,239 INFO:token price threshold is 115000
+2025-07-04 07:57:02,667 INFO:No stuck transactions to cancel
+2025-07-04 07:57:18,965 INFO:Input amount in wei: 10.0729089
+2025-07-04 07:57:19,718 INFO:Token decimals: 6
+2025-07-04 07:57:28,660 INFO:Token balance in wei: 93961125
+2025-07-04 07:57:29,468 INFO:Token balance in token: 93.961125
+2025-07-04 07:57:34,195 INFO:Sufficient Permit2 allowance already exists
+2025-07-04 07:57:38,641 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1754200656, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751608836}
+2025-07-04 07:57:39,326 INFO:signed_message: SignedMessage(message_hash=HexBytes('0xee5faf26931fdce5fa8b01fbaffd0a7a10609e30ab4b2af79caccf1e063447e3'), r=5773881125515976613069700264467588049677414290695250568412868118229753469412, s=20782941936559319819294671243767731658695929902099883404409157420908176357879, v=28, signature=HexBytes('0x0cc3e6a1d74d00ae976dbd0a18e113d854c33dc0e8d1b8fea9fd8bd71d6f19e42df2ba709aca9703dd18e922e02c25afc71ffcf110b25bce880d120cae5639f71c'))
+2025-07-04 07:57:40,022 INFO:amount_in_wei: 10.0729089
+2025-07-04 07:59:38,064 INFO:Started
+2025-07-04 07:59:41,282 INFO:Token balance is 0.0
+2025-07-04 07:59:42,515 INFO:Stable balance is 93.961125
+2025-07-04 07:59:43,019 INFO:token price is 109122
+2025-07-04 07:59:43,020 INFO:token price threshold is 115000
+2025-07-04 07:59:48,548 INFO:No stuck transactions to cancel
+2025-07-04 08:00:02,955 INFO:Input amount in wei: 10.07632548
+2025-07-04 08:00:03,702 INFO:Token decimals: 6
+2025-07-04 08:00:15,403 INFO:Token balance in wei: 93961125
+2025-07-04 08:00:16,382 INFO:Token balance in token: 93.961125
+2025-07-04 08:00:19,680 INFO:Sufficient Permit2 allowance already exists
+2025-07-04 08:00:22,811 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1754200821, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751609001}
+2025-07-04 08:00:23,589 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x474b8b78029b71693df41b8a44eda84d4668799c4542c428eebfaa56b8ba20d7'), r=49644312848720684032748333851652217156682008832617791727625805193403042538825, s=14704531458377434932084981884652087352337740998377175555858079712866535862478, v=28, signature=HexBytes('0x6dc1af71a6b88b7eee37cb1c20f149f77ba70fa183422da2680ab9f0ce5aa5492082784948add740f42e4aee1157a3532f5f603fdf37302dd8442cd6e6edf0ce1c'))
+2025-07-04 08:00:24,327 INFO:amount_in_wei: 10.07632548
+2025-07-04 08:01:03,115 ERROR:Errore:
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 76, in main
+    uni.make_trade( stable_token_name,token_name,stable_due,3000,0.5,"v3")
+  File "/home/mbaraldi/mySoftware/mycryptobot/CryptoUtil/Uniswap.py", line 254, in make_trade
+    .v3_swap_exact_in(
+     ^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/uniswap_universal_router_decoder/_encoder.py", line 699, in v3_swap_exact_in
+    self._add_command(RouterFunction.V3_SWAP_EXACT_IN, args)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/uniswap_universal_router_decoder/_encoder.py", line 531, in _add_command
+    arguments = abi.get_selector() + abi.encode(args) if add_selector else abi.encode(args)
+                                                                           ^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/uniswap_universal_router_decoder/_abi_builder.py", line 75, in encode
+    return encode(self.get_abi_types(), args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_abi/codec.py", line 75, in encode
+    return encoder(args)
+           ^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_abi/encoding.py", line 93, in __call__
+    return self.encode(value)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_abi/encoding.py", line 132, in encode
+    self.validate_value(values)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_abi/encoding.py", line 127, in validate_value
+    encoder.validate_value(item)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_abi/encoding.py", line 257, in validate_value
+    self.invalidate_value(value)
+  File "/home/mbaraldi/mySoftware/mycryptobot/.venv/lib/python3.12/site-packages/eth_abi/encoding.py", line 87, in invalidate_value
+    raise exc(
+eth_abi.exceptions.EncodingTypeError: Value `91.88059263806332` of type <class 'float'> cannot be encoded by UnsignedIntegerEncoder
+
+2025-07-04 08:03:25,936 INFO:Started
+2025-07-04 08:03:29,026 INFO:Token balance is 0.0
+2025-07-04 08:03:30,249 INFO:Stable balance is 93.961125
+2025-07-04 08:03:31,573 INFO:token price is 108991
+2025-07-04 08:03:31,573 INFO:token price threshold is 115000
+2025-07-04 08:03:37,001 INFO:No stuck transactions to cancel
+2025-07-04 08:03:48,478 INFO:Input amount in wei: 10.06422894
+2025-07-04 08:03:48,478 INFO:Token decimals: 6
+2025-07-04 08:03:48,994 INFO:Token balance in wei: 93961125
+2025-07-04 08:03:48,994 INFO:Token balance in token: 93.961125
+2025-07-04 08:03:55,448 INFO:Sufficient Permit2 allowance already exists
+2025-07-04 08:03:58,671 INFO:permit_data: {'details': {'token': '0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2', 'amount': 1461501637330902918203684832716283019655932542975, 'expiration': 1754201036, 'nonce': 0}, 'spender': '0x6fF5693b99212Da76ad316178A184AB56D299b43', 'sigDeadline': 1751609216}
+2025-07-04 08:03:59,416 INFO:signed_message: SignedMessage(message_hash=HexBytes('0x188f2861b2c98d94c6baf29bdb579cf752ddc9c87a77e965a0712c023af1246d'), r=25479096762701556955613418204722459181381557851566040974065705187219092189975, s=16691555272131753079429163365432309054761032296840864125139511687665648251426, v=28, signature=HexBytes('0x3854a8604300768f98626d92f32e6a46a1953a24f6d385c9bf3d500b7b46b31724e715e2cc9f069e00e6b7c4f97c7e4579e093332dafc3982a4d19e4c255b2221c'))
+2025-07-04 08:04:00,169 INFO:amount_in_wei: 10.06422894
+2025-07-04 08:05:26,285 ERROR:Errore:
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 78, in main
+    logger.info(f"swap BUY executed  transaction id={txt_id} "  )
+                                                     ^^^^^^
+UnboundLocalError: cannot access local variable 'txt_id' where it is not associated with a value
+
+2025-09-10 18:36:50,876 INFO:Started
+2025-09-10 18:37:13,576 ERROR:Errore:
+Traceback (most recent call last):
+  File "/home/mbaraldi/mySoftware/mycryptobot/bot.py", line 50, in main
+    cbtc = Token("base","cbtc")
+           ^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+2025-09-10 18:39:12,751 INFO:Started
+2025-09-12 18:03:18,720 INFO:Started
+2025-09-12 18:03:36,943 INFO:Entered Do Action
+2025-09-12 18:15:29,411 INFO:Started
+2025-09-12 18:15:30,715 INFO:Entered Do Action
+2025-09-12 18:16:29,595 INFO:Started
+2025-09-12 18:16:30,823 INFO:Entered Do Action
+2025-09-12 18:18:31,540 INFO:Started
+2025-09-12 18:18:46,459 INFO:Entered Do Action
+2025-09-14 22:45:40,368 INFO:Started
+2025-09-14 22:45:59,274 INFO:Entered Do Action
+2025-09-14 22:47:11,020 INFO:Started
+2025-09-14 22:47:23,922 INFO:Entered Do Action
+2025-09-14 22:47:31,840 INFO:Token cbtc
+2025-09-14 22:50:44,481 INFO:Started
+2025-09-14 22:50:59,169 INFO:Entered Do Action
+2025-09-14 22:51:03,650 INFO:Token coinbase-wrapped-btc
+2025-09-14 22:55:48,693 INFO:Started
+2025-09-14 22:56:01,705 INFO:Entered Do Action
+2025-09-14 22:56:05,381 INFO:Token coinbase-wrapped-btc
+2025-09-14 22:58:11,277 INFO:Started
+2025-09-14 22:58:19,969 INFO:Entered Do Action
+2025-09-14 22:58:25,743 INFO:Token coinbase-wrapped-btc
+2025-09-14 22:58:28,353 INFO:Token price={token_price}
+2025-09-14 23:01:05,055 INFO:Started
+2025-09-14 23:01:16,957 INFO:Entered Do Action
+2025-09-14 23:01:22,281 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:01:28,185 INFO:Token price=115882
+2025-09-14 23:01:49,405 INFO:Sell at 115882
+2025-09-14 23:05:56,497 INFO:Started
+2025-09-14 23:06:08,364 INFO:Entered Do Action
+2025-09-14 23:06:13,124 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:06:16,231 INFO:Token price=115911
+2025-09-14 23:06:19,344 INFO:Sell at 115911
+2025-09-14 23:12:09,369 INFO:Started
+2025-09-14 23:12:20,091 INFO:Entered Do Action
+2025-09-14 23:12:25,688 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:12:25,982 INFO:Token price=115825
+2025-09-14 23:12:25,982 INFO:Sell at 115825
+2025-09-14 23:12:58,682 INFO:Started
+2025-09-14 23:13:05,489 INFO:Entered Do Action
+2025-09-14 23:13:08,917 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:13:11,113 INFO:Token price=115825
+2025-09-14 23:13:11,113 INFO:Sell at 115825
+2025-09-14 23:16:32,671 INFO:Started
+2025-09-14 23:16:36,737 INFO:Entered Do Action
+2025-09-14 23:16:39,149 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:16:39,416 INFO:Token price=115666
+2025-09-14 23:16:39,416 INFO:Sell at 115666
+2025-09-14 23:19:13,663 INFO:Started
+2025-09-14 23:19:45,935 INFO:Entered Do Action
+2025-09-14 23:19:52,851 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:19:54,485 INFO:Token price=115827
+2025-09-14 23:19:54,485 INFO:Sell at 115827
+2025-09-14 23:21:28,646 INFO:Started
+2025-09-14 23:21:37,621 INFO:Entered Do Action
+2025-09-14 23:21:43,853 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:21:44,150 INFO:Token price=115773
+2025-09-14 23:21:44,151 INFO:Sell at 115773
+2025-09-14 23:26:21,231 INFO:Started
+2025-09-14 23:26:31,479 INFO:Entered Do Action
+2025-09-14 23:26:33,129 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:26:33,429 INFO:Token price=115872
+2025-09-14 23:26:33,430 INFO:Sell at 115872
+2025-09-14 23:39:53,397 INFO:Started
+2025-09-14 23:39:59,834 INFO:Entered Do Action
+2025-09-14 23:40:01,168 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:40:01,478 INFO:Token price=115919
+2025-09-14 23:40:01,479 INFO:Sell at 115919
+2025-09-14 23:44:34,116 INFO:Started
+2025-09-14 23:44:40,454 INFO:Entered Do Action
+2025-09-14 23:44:41,694 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:44:42,049 INFO:Token price=116019
+2025-09-14 23:44:42,049 INFO:Sell at 116019
+2025-09-14 23:49:53,691 INFO:Started
+2025-09-14 23:49:59,622 INFO:Entered Do Action
+2025-09-14 23:50:01,953 INFO:Token coinbase-wrapped-btc
+2025-09-14 23:50:02,261 INFO:Token price=116102
+2025-09-14 23:50:02,261 INFO:Sell at 116102
+2025-09-15 08:01:13,777 INFO:Started
+2025-09-15 08:01:32,505 INFO:Started
+2025-09-15 08:01:37,157 INFO:Entered Do Action
+2025-09-15 08:01:38,895 INFO:Token coinbase-wrapped-btc
+2025-09-15 08:01:39,208 INFO:Token price=116562
+2025-09-15 08:01:39,208 INFO:Sell at 116562
+2025-09-16 07:49:22,240 INFO:Started
+2025-09-16 07:49:34,119 INFO:Entered Do Action
+2025-09-16 07:49:37,547 INFO:Token coinbase-wrapped-btc
+2025-09-16 07:49:40,684 INFO:Token price=115910
+2025-09-16 07:49:44,188 INFO:Sell at 115910
+2025-09-16 07:52:49,729 INFO:Started
+2025-09-16 07:52:57,974 INFO:Entered Do Action
+2025-09-16 07:53:00,634 INFO:Token coinbase-wrapped-btc
+2025-09-16 07:53:02,561 INFO:Token price=115802
+2025-09-16 07:53:07,009 INFO:Sell at 115802
+2025-09-16 07:55:09,286 INFO:Started
+2025-09-16 07:55:16,943 INFO:Entered Do Action
+2025-09-16 07:55:20,175 INFO:Token coinbase-wrapped-btc
+2025-09-16 07:55:25,362 INFO:Token price=115821
+2025-09-16 07:55:29,306 INFO:Sell at 115821
+2025-09-16 08:01:02,145 INFO:Started
+2025-09-16 08:01:16,551 INFO:Entered Do Action
+2025-09-16 08:01:17,999 INFO:Token coinbase-wrapped-btc
+2025-09-16 08:01:18,228 INFO:Token price=115906
+2025-09-16 08:01:18,228 INFO:Sell at 115906
+2025-09-16 19:33:08,935 INFO:Started
+2025-09-16 19:33:18,811 INFO:Entered Do Action
+2025-09-16 19:33:23,010 INFO:Token coinbase-wrapped-btc
+2025-09-16 19:33:32,492 INFO:Token price=116732
