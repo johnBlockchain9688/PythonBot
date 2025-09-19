@@ -1,11 +1,32 @@
 
 import os
+import sys
 from dotenv import load_dotenv
 import logging
+import logging.handlers
 
 _version_ = '1.1.42'
 load_dotenv()
 
+#Set logger with required log level as base 
+loggerInstance = logging.getLogger('crypto_bot')
+loggerInstance.setLevel(logging.INFO)
 
+# Configure the handler with filePath,maxBytes and backupCount
+# maxBytes - theMaxSizeOfLogFileInBytes
+# backupCount - numberOFBackUpFiles to be created ex: logFile1,logFile2 etc (after log rotation)
+handler = logging.handlers.RotatingFileHandler("/home/marco/log/crypto_bot.log",
+                                               maxBytes=100000,
+                                               backupCount=30)
+#Specify the required format                                               
+formatter = logging.Formatter('%(asctime)s %(filename)s %(funcName)s %(lineno)d %(levelname)s %(message)s')
+#Add formatter to handler
+handler.setFormatter(formatter)
+#Initialize logger instance with handler
+loggerInstance.addHandler(handler)
 
-logging.basicConfig(level=logging.INFO,filename='CryptoUtil.log',format='%(asctime)s %(levelname)s:%(message)s')
+# writing to stdout
+handler2 = logging.StreamHandler(sys.stdout)
+handler2.setLevel(logging.INFO)
+handler2.setFormatter(formatter)
+loggerInstance.addHandler(handler2)

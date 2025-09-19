@@ -1,6 +1,6 @@
 from CryptoUtil import Token
-from erc20_opt import *
 from pushbullet import Pushbullet
+from dotenv import load_dotenv
 import traceback
 import logging
 import os
@@ -9,7 +9,7 @@ from CryptoUtil.Chain import Chain
 from CryptoUtil.Token import Token
 from CryptoUtil.AAVE import AAVE
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('crypto_bot')
 
 
 #Constant
@@ -82,6 +82,7 @@ def swap_usdc_token(amount,block_chain:str, token_name:str):
 
 def do_action(block_chain:str, action_id: str, action_type:str, amount:str, target_price:float , token_name:str, address:str):
     logger.info("Entered Do Action")
+    logger.info("Action type")
     token = Token(block_chain, token_name)
     logger.info("Token " +token_name )
     token_price = token.get_token_price()
@@ -107,6 +108,7 @@ def main():
         logger.info("Started")
         push_key = os.getenv("PUSH_KEY")
         pb = Pushbullet(push_key)
+        logger.info("Push key done")
         target_price = 113000
         token_name = "coinbase-wrapped-btc"
         amount = "0.001"
