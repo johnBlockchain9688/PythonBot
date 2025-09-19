@@ -21,10 +21,11 @@ def action_done(qta: str):
 def sell_token(amount_token:float, address:str, block_chain:str,token_name:str):
     defi_platform = AAVE(block_chain)
     token_sell =Token(block_chain,token_name)
-    if amount_token>0:
+    amount_token_float=float(amount_token)
+    if amount_token_float>0:
         defi_platform.withdraw(token_name, amount_token, address)
         time.sleep(3)
-        if token_sell.balance_of(address) < amount_token:
+        if token_sell.balance_of(address) < amount_token_float:
             raise Exception("Error insufficient Token Balance")
         amount_usdc=swap_token_usdc(amount_token,block_chain, token_name)
         time.sleep(3)
@@ -101,37 +102,25 @@ def do_action(block_chain:str, action_id: str, action_type:str, amount:str, targ
 
 
 def main():
-            logger.info("Started")
-            push_key = os.getenv("PUSH_KEY")
-            pb = Pushbullet(push_key)
-    # try:
-            # Crea handler con rotazione per dimensione
 
-            #Init env variable
+    try:
+        logger.info("Started")
+        push_key = os.getenv("PUSH_KEY")
+        pb = Pushbullet(push_key)
+        target_price = 113000
+        token_name = "coinbase-wrapped-btc"
+        amount = "0.001"
+        block_chain = "ETHEREUM"
+        action_id = "1"
+        action_type = "SELL"
+        wallet_address = os.getenv("MY_ADDRESS")
 
+        message=do_action(block_chain, action_id, action_type, amount, target_price, token_name, wallet_address)
+        if message is not None:
+            push = pb.push_note("Crypto bot",message)
 
-
-
-            # MEttere il controllo che se vendo abbia in aave abbastanza liquidita
-            # mETTERE VAriabile la stable coin adesso cablata usdc
-            #mettere veramente variabile il token nelle API
-
-
-            while True:
-                target_price = 113000
-                token_name = "coinbase-wrapped-btc"
-                amount = "0.001"
-                block_chain = "ETHEREUM"
-                action_id = "1"
-                action_type = "SELL"
-                wallet_address = os.getenv("MY_ADDRESS")
-
-                message=do_action(block_chain, action_id, action_type, amount, target_price, token_name, wallet_address)
-                if message is not None:
-                    push = pb.push_note("Crypto bot",message)
-                time.sleep(500)
-
-
+    except Exception as e:
+               logging.error(e)
 if __name__ == "__main__":
     # load .env
     load_dotenv()
