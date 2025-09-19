@@ -11,11 +11,11 @@ load_dotenv()
 #Set logger with required log level as base 
 loggerInstance = logging.getLogger('crypto_bot')
 loggerInstance.setLevel(logging.INFO)
-
+log_location = os.getenv("LOG_LOCATION")
 # Configure the handler with filePath,maxBytes and backupCount
 # maxBytes - theMaxSizeOfLogFileInBytes
 # backupCount - numberOFBackUpFiles to be created ex: logFile1,logFile2 etc (after log rotation)
-handler = logging.handlers.RotatingFileHandler("/home/marco/log/crypto_bot.log",
+handler = logging.handlers.RotatingFileHandler(log_location,
                                                maxBytes=100000,
                                                backupCount=30)
 #Specify the required format                                               
