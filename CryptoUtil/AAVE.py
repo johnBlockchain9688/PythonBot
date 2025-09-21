@@ -5,19 +5,13 @@
 # mail=john.blockchain9688@gmail.com
 # Description: 
 # History of change:
-#https://aave.com/docs/resources/addresses
+# https://aave.com/docs/resources/addresses
 # https://search.onaave.com/
-#Manca da gestire il caso non sia approvato
-#calcolo delle gas fee adesso e' cablato
-# gestione delle eccezioni e dei log
 # *****************************************************************************
-from web3 import Web3
 
-from CryptoUtil.Chain import Chain
 from CryptoUtil.SmartContract import SmartContract
 from CryptoUtil.Token import Token
 
-from decimal import Decimal
 import os
 import logging
 from CryptoUtil.Defi import Defi
@@ -116,8 +110,8 @@ class AAVE(Defi):
 
     def deposit(self,asset: str ,amount: str,address: str):
         token =Token(self.chain_name,asset)
-        amount_float=float(amount)
-        amount_wei =token.get_wei_amount(amount_float)
+
+        amount_wei =token.get_wei_amount(amount)
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.deposit(token.address, amount_wei,address,0).build_transaction({
@@ -131,8 +125,8 @@ class AAVE(Defi):
 
     def withdraw(self, asset:str , amount: str, address: str):
         token = Token(self.chain_name, asset)
-        amount_float = float(amount)
-        amount_wei = token.get_wei_amount(amount_float)
+
+        amount_wei = token.get_wei_amount(amount)
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.withdraw(token.address, amount_wei, address).build_transaction({
@@ -147,8 +141,7 @@ class AAVE(Defi):
 
     def borrow(self,asset,amount: str, address: str):
         token = Token(self.chain_name, asset)
-        amount_float = float(amount)
-        amount_wei = token.get_wei_amount(amount_float)
+        amount_wei = token.get_wei_amount(amount)
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.borrow(token.address, amount_wei,2,0,
@@ -164,29 +157,13 @@ class AAVE(Defi):
 
     def repay(self,asset: str,amount: str, address: str):
         token = Token(self.chain_name, asset)
-        amount_float = float(amount)
-        amount_wei = token.get_wei_amount(amount_float)
+
+        amount_wei = token.get_wei_amount(amount)
 
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.repay(token.address, amount_wei,2,0,
                                                                      address).build_transaction({
-            'from': address,
-            'gas': int(gas_parameters['estimated_total_wei']),
-            'gasPrice': self.web3.eth.gas_price,
-            'nonce': nonce,
-        })
-        tx_hash = self.blockChain.send_transaction(transaction)
-        return tx_hash
-#Abbandonato lo sviluppo perche non so cosa mettere dentro il parametro  paraswapData
-
-    def swap_repay(self, Collateralasset,debtAsset, cpllaterak_amount, dept_repay_amount, address: str):
-        token = Token(self.chain_name, Collateralasset)
-        amount_wei = token.get_wei_amount(amount)
-        gas_parameters = self.blockChain.calculate_gas_parameters()
-        nonce = self.web3.eth.get_transaction_count(address)
-        transaction = self.pool_contract.contract.functions.repay(token.address, amount_wei, 2, 0,
-                                                                  address).build_transaction({
             'from': address,
             'gas': int(gas_parameters['estimated_total_wei']),
             'gasPrice': self.web3.eth.gas_price,

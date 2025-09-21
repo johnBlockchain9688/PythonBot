@@ -87,7 +87,7 @@ def sell_token(amount_token: float, address: str, block_chain: str, token_name: 
             raise Exception(f"Invalid USDC amount returned: {amount_usdc}")
 
         if usdc_to_aave > 0:
-            logger.info(f"Depositing {usdc_to_aave} USDC into AAVE")
+            logger.info(f"Depositing {amount_usdc} USDC into AAVE")
             defi_platform.deposit("USDC", amount_usdc, address)
 
         return amount_usdc

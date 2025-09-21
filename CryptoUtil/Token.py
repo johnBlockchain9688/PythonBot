@@ -74,7 +74,7 @@ class Token(SmartContract):
         return data[self.name]['usd']
 
 
-    def get_wei_amount(self,amount: float):
+    def get_wei_amount(self,amount: str):
         amount_float=float(amount)
         amount_wei = int(amount_float * (10 ** self.decimals))
         return amount_wei
