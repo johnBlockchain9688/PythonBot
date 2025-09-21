@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 import traceback
 import logging
 import os
+import time
+import sys
 import requests
 from CryptoUtil.Chain import Chain
 from CryptoUtil.Token import Token
@@ -12,13 +14,20 @@ from CryptoUtil.AAVE import AAVE
 logger = logging.getLogger('crypto_bot')
 
 
-#Constant
 
 
 def action_done(qta: str):
+    logger.info("Start action Done")
+    directory =os.getenv("STOP_DIR") 
+    filename = "stop.txt"
+    filepath = os.path.join(directory, filename)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("stop")
+    logger.info("End action Done")
     return None
 
 def sell_token(amount_token:float, address:str, block_chain:str,token_name:str):
+    logger.info(" Start SELL Token  ")
     defi_platform = AAVE(block_chain)
     token_sell =Token(block_chain,token_name)
     amount_token_float=float(amount_token)
@@ -105,6 +114,13 @@ def do_action(block_chain:str, action_id: str, action_type:str, amount:str, targ
 def main():
 
     try:
+      directory =os.getenv("STOP_DIR") 
+      filename = "stop.txt"
+      filepath = os.path.join(directory, filename)
+      if  os.path.exists(filepath):
+        logger.info("Stop file: exit ")
+        sys.exit(0)     
+      else:
         logger.info("Started")
         push_key = os.getenv("PUSH_KEY")
         pb = Pushbullet(push_key)
