@@ -132,7 +132,7 @@ def swap_token_usdc(amount, block_chain: str, token_name: str):
 
     logger.info(f"Calling API for token→USDC swap: {url}")
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=600)
     except requests.RequestException as e:
         logger.error("Network error during swap_token_usdc", exc_info=True)
         raise Exception(f"Network error while swapping token to USDC: {e}")
@@ -161,7 +161,7 @@ def swap_usdc_token(amount, block_chain: str, token_name: str):
 
     logger.info(f"Calling API for USDC→token swap: {url}")
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=600)
     except requests.RequestException as e:
         logger.error("Network error during swap_usdc_token", exc_info=True)
         raise Exception(f"Network error while swapping USDC to token: {e}")
@@ -264,6 +264,7 @@ def main():
 
     except Exception as e:
         logger.error(f"Error in main: {e}", exc_info=True)
+        pb.push_note("Crypto bot", "Error in crypto bot")
         traceback.print_exc()
     logger.info("Bot execution finished")
 
