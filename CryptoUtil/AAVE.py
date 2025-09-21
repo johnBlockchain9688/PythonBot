@@ -96,7 +96,7 @@ class AAVE(Defi):
 
 
     # -1 to repay every thing
-    def repay_eth(self,amount, to_address: str):
+    def repay_eth(self,amount: str, to_address: str):
 
         amount = self.web3.to_wei(amount, 'ether')
         value = amount
@@ -114,7 +114,7 @@ class AAVE(Defi):
 
 
 
-    def deposit(self,asset,amount,address):
+    def deposit(self,asset: str ,amount: str,address: str):
         token =Token(self.chain_name,asset)
         amount_float=float(amount)
         amount_wei =token.get_wei_amount(amount_float)
@@ -129,9 +129,10 @@ class AAVE(Defi):
         tx_hash = self.blockChain.send_transaction(transaction)
         return tx_hash
 
-    def withdraw(self, asset, amount, address):
+    def withdraw(self, asset:str , amount: str, address: str):
         token = Token(self.chain_name, asset)
-        amount_wei = token.get_wei_amount(amount)
+        amount_float = float(amount)
+        amount_wei = token.get_wei_amount(amount_float)
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.withdraw(token.address, amount_wei, address).build_transaction({
@@ -144,9 +145,10 @@ class AAVE(Defi):
         return tx_hash
 
 
-    def borrow(self,asset,amount, address: str):
+    def borrow(self,asset,amount: str, address: str):
         token = Token(self.chain_name, asset)
-        amount_wei = token.get_wei_amount(amount)
+        amount_float = float(amount)
+        amount_wei = token.get_wei_amount(amount_float)
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.borrow(token.address, amount_wei,2,0,
@@ -160,9 +162,11 @@ class AAVE(Defi):
         return tx_hash
 
 
-    def repay(self,asset,amount, address: str):
+    def repay(self,asset: str,amount: str, address: str):
         token = Token(self.chain_name, asset)
-        amount_wei = token.get_wei_amount(amount)
+        amount_float = float(amount)
+        amount_wei = token.get_wei_amount(amount_float)
+
         gas_parameters = self.blockChain.calculate_gas_parameters()
         nonce = self.web3.eth.get_transaction_count(address)
         transaction = self.pool_contract.contract.functions.repay(token.address, amount_wei,2,0,
